@@ -4,7 +4,7 @@ package org.simlily.field;
  * @author OWNER
  *
  */
-public class FiledPathConnection {
+public class FieldPathConnection {
 	/**
 	 * 接続元パス%
 	 */
@@ -17,9 +17,21 @@ public class FiledPathConnection {
 	 * @param pathLocationRatio
 	 * @param connectedPath
 	 */
-	public FiledPathConnection(float pathLocationRatio, FieldPath connectedPath) {
+	public FieldPathConnection(float pathLocationRatio, FieldPath connectedPath) {
 		super();
 		this.pathLocationRatio = pathLocationRatio;
+		this.connectedPath = connectedPath;
+	}
+	public float getPathLocationRatio() {
+		return pathLocationRatio;
+	}
+	public void setPathLocationRatio(float pathLocationRatio) {
+		this.pathLocationRatio = pathLocationRatio;
+	}
+	public FieldPath getConnectedPath() {
+		return connectedPath;
+	}
+	public void setConnectedPath(FieldPath connectedPath) {
 		this.connectedPath = connectedPath;
 	}
 	
